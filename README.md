@@ -15,7 +15,7 @@ public static RedisComponent GetZoneRedis(this DBManagerComponent self, int zone
     return null;
 }
 
-public static RedisComponent CreateZoneRedis(this DBManagerComponent self, int zone, string connectionString, int databaseNumber)
+public static RedisComponent CreateZoneRedis(this DBManagerComponent self, int zone, string connectionString, int databaseNumber = 0)
 {
     /*
         connectionString 说明：
